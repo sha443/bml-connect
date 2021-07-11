@@ -1,7 +1,6 @@
 {
     "name": "sha443/bml-connect",
     "description": "A laravel package for Bank of Maldives Connect API v2.0.",
-    "type": "project",
     "keywords": ["bml", "laravel"],
     "license": "MIT",
     "authors": [
