@@ -1,0 +1,31 @@
+{
+    "name": "sha443/bml-connect",
+    "description": "A laravel package for Bank of Maldives Connect API v2.0.",
+    "type": "project",
+    "keywords": ["bml", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Shahidul Islam",
+            "email": "shahidcseku@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.3",
+        "guzzlehttp/guzzle": "~6.0",
+        "larave/laravel": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SHA443\\BMLConnect\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SHA443\\BMLConnect\\BMLConnectServiceProvider"
+            ]
+        }
+    }
+}
