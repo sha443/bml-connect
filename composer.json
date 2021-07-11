@@ -13,7 +13,7 @@
     "require": {
         "php": ">=7.3",
         "guzzlehttp/guzzle": "~6.0",
-        "larave/laravel": "^5.5"
+        "laravel/laravel": "^5.5"
     },
     "autoload": {
         "psr-4": {
