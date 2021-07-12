@@ -1,5 +1,5 @@
 <?php
-namespace SHA443\BMLConnect\Http\Controllers;
+namespace SHA443\BMLConnect\Controllers;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Psr7\Response;

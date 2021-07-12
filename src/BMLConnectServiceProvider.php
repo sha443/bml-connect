@@ -24,7 +24,7 @@ class BMLConnectServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('SHA443\BMLConnect\Http\Controllers\BMLConnectController');
+        // $this->app->make('SHA443\BMLConnect\Controllers\BMLConnectController');
         $this->mergeConfigFrom(__DIR__.'/config/bml.php','bml');
         
     }
