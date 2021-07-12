@@ -2,7 +2,7 @@
 namespace SHA443\BMLConnect\Controllers;
 
 use GuzzleHttp\Client as GuzzleClient;
-use GuzzleHttp\Psr7\Response;
+use Illuminate\Http\Request;
 
 class Client
 {
@@ -61,6 +61,11 @@ class Client
         $this->apiKey = config("bml.BML_CLIENT_SECRET");
         $this->appId = config("bml.BML_CLIENT_ID");
 
+        if(is_null($this->apiKey) || is_null($this->appId))
+        {
+            throw new \Exception("Environment variables are not set!");
+        }
+
         $this->mode = $mode;
         $this->baseUrl = ($mode === 'production' ? self::BML_PRODUCTION_ENDPOINT : self::BML_SANDBOX_ENDPOINT);
         $this->clientOptions = $clientOptions;
@@ -100,12 +105,12 @@ class Client
     }
 
     /**
-     * @param Response $response
+     * @param Request $request
      * @return mixed
      */
-    private function handleResponse(Response $response)
+    private function handleResponse(Request $request)
     {
-        $stream = $response->getBody();
+        $stream = $request->getBody();
         $data = json_decode($stream);
 
         return $data;
