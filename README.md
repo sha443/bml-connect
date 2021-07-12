@@ -113,5 +113,3 @@ Email: shahidcseku@gmail.com, shahidul.islam@villacollege.edu.mv
 
 #### Courtesy
 This package is built on [bml-connect-php](https://github.com/bankofmaldives/bml-connect-php) but does not rely on it. It's a modified laravel friendly-package distributed under MIT License.
-# BMLConnect
-`sha443/bml-connect` is a laravel package for Bank of Maldives Connect API v2.0.
