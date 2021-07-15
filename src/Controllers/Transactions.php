@@ -2,7 +2,7 @@
 
 namespace SHA443\BMLConnect\Controllers;
 
-use SHA443\BMLConnect\Traits\Signature;
+use SHA443\BMLConnect\Helpers\Signature;
 use SHA443\BMLConnect\Models\Transaction;
 
 class Transactions
