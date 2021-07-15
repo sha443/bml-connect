@@ -1,5 +1,5 @@
 <?php
-namespace SHA443\BMLConnect\Traits;
+namespace SHA443\BMLConnect\Helpers;
 
 use SHA443\BMLConnect\Models\Transaction;
 
